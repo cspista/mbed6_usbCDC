@@ -40,7 +40,7 @@ by using an USB cable and an USB socket breakout card.
 * Start with an empty mbed 6 project
 * Edit the main.cpp source file
 * Configure the project by adding an **mbed_app.json** file in which
-    * We have to configure **usb_speedE** parameter
+    * We have to configure **usb_speed** parameter
     * We have to add **USBDEVICE** to the device list of the target
 
 Finally the **mbed_app.json** sholuld look like this: 
@@ -61,9 +61,10 @@ Finally the **mbed_app.json** sholuld look like this:
 }
 ```
 ## mbed6_usbCDC results
-Open two terminal windows on the PC. One for the ST-Link v2-1 and the other for the target MCU USB connection.
+Open two terminal windows on the PC. One for the ST-Link v2-1 and the other for 
+the new virtual serial port provided by the USB device of the target MCU .
 The default baudrate is 9600 bps for the ST-Link virtual serial port. 
-The other virtual serial port does not need baudrate setting.
+The other virtual serial port does not need baudrate setting (baudrate setting has no efffect on the USB transfer).
 After (re)starting of the program you should se the following output:
 
 ![](./images/mbed6_usbCDC.png)
