@@ -33,7 +33,7 @@ by using an USB cable and an USB socket breakout card.
 
 
 
-![](./images/USB_wiring.png)
+![](./images/USB_wiring.jpg)
 
 
 ## Software requirements
